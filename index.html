@@ -4,10 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock-Paper-Scissors</title>
-    <script src="app.js"></script>
+    <title>Paper-Rock-Scissors</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header class="header">
+        <h1>Paper-Rock-Scissors: The inversion!!</h1>
+    </header>
+
+    <div class="modal" data-tilt>
+        <div class="img-container">
+            <img src="paper.png" alt="">
+            <img src="rock.png" alt="">
+            <img src="scissors.png" alt="">
+        </div>
+        <h2>Welcome to "Paper-Rock-Scissors".</h2>
+        <h3>Rock beats Paper. Paper beats Scissors. Scissors beats Rock.</h3>
+        <button id="start-btn">Click to play</button>
+    </div>
+
+    <h2 class="score-info hidden"></h2>
+    <h3 class="score-message hidden"></h3>
     
+    <div class="scoreboard hidden">
+        <div class="score-container">
+            <div class="score-box">
+                <div class="choice" ><img id="player-choice" src="" alt=""></div>
+                <p class="score">Player: <span id="player-score">0</span></p>
+            </div>
+            <div class="score-box">
+                <div class="choice" ><img id="computer-choice" src="" alt=""></div>
+                <p class="score">Computer: <span id="computer-score">0</span></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container hidden">
+        <div class="card" data-tilt>
+            <div class="content" id="paper">
+                <h2>01</h2>
+                <h3>Paper</h3>
+                <p><img src="paper.png"></p>
+            </div>
+        </div>
+        <div class="card" data-tilt>
+            <div class="content" id="rock">
+                <h2>02</h2>
+                <h3>Rock</h3>
+                <p><img src="rock.png"></p>
+            </div>
+        </div>
+        <div class="card" data-tilt>
+            <div class="content" id="scissors">
+                <h2>03</h2>
+                <h3>Scissors</h3>
+                <p><img src="scissors.png"></p>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="app.js"></script>
+<script type="text/javascript" src="vanilla-tilt.js"></script>
 </html>
